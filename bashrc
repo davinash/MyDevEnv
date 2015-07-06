@@ -167,4 +167,23 @@ export SVN_EDITOR=vim
 export PATH=/adongre1/work/scala/lang/scala-2.10.3/bin:/adongre1/work/scala/tools/sbt.0.13.0/bin:$PATH
 alias clj='java -cp  /adongre1/sandbox.open.source/clojure/target/clojure-1.7.0-master-SNAPSHOT.jar  clojure.main'
 
+# Need to check the following
+# some more ls aliases
+alias ll='ls -alh'
+alias la='ls -A'
+alias l='ls -CFlh'
+alias woo='fortune'
+alias lsd="ls -alF | grep /$"
+
+# This is GOLD for finding out what is taking so much space on your drives!
+alias diskspace="du -S | sort -n -r |more"
+
+# Command line mplayer movie watching for the win.
+alias mp="mplayer -fs"
+
+# Show me the size (sorted) of only the folders in this directory
+alias folders="find . -maxdepth 1 -type d -print | xargs du -sk | sort -rn"
+
+# This will keep you sane when you're about to smash the keyboard again.
+alias frak="fortune"
 
